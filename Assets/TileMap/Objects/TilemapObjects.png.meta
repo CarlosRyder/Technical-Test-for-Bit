@@ -1,0 +1,886 @@
+fileFormatVersion: 2
+guid: 2db0aa83223e09b46a054f29958c25ee
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TilemapGround_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1792
+        width: 251
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0271eb954ae79914f8c8253e851398ac
+      internalID: 142328594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1792
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf04a98cb6402c4f8402d2b79c3fe3b
+      internalID: 1197429883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_2
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1792
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394e393dc979c8a4cb3a26d878a95b1e
+      internalID: -1014847807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_3
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1792
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6f4df4228639443b2836c534d26973
+      internalID: 1710979113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_4
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1792
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b487dc390781142a6e37220e1e759b
+      internalID: 321028892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1792
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbbf50bd7f49194ca86ff42d6dd79d0
+      internalID: 162097939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 254
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07e020258de4ca408f5d6f068847174
+      internalID: -1136757622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_7
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1792
+        width: 255
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfea75d628260f64bab1127808e73286
+      internalID: -115953735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1536
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e7f6653b2e6674d92e8725b7cd9104
+      internalID: 387972400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1536
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02d7fe48853f0949b2a26ae449be278
+      internalID: 1029240896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_10
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1536
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8267e281e19d44f87142ce51d58eb6
+      internalID: -383252395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_11
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1536
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03c7d1e4c1da4944b2607968a0e69f6
+      internalID: 1621017294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1536
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552c4c0f52a165e40943c4db2584f780
+      internalID: 21393206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_13
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1536
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad296afdcb0d01438ba8d4a9ef52004
+      internalID: -1381351829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_14
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1536
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36c1b3b9c491294aad833f82932d137
+      internalID: -541195929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1280
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c9a6f3413a80e4993d4721e991ae05
+      internalID: 2018910796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_16
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1280
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5912d103336404488bf8bf14bed731
+      internalID: 882233359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_17
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1280
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3fc3e71b692674f8b127e69775fa65
+      internalID: -1740125428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_18
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1280
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386424d632bbfaa4d8df52be85c26912
+      internalID: -1300243523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_19
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1280
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab1c2149ba9a8e44b2a2a188329d4b6
+      internalID: 77169367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4215babbf1862f740bef8639b57acbe4
+      internalID: -649249880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_21
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1280
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a4f5cff797dca43b2410bb4a94e278
+      internalID: -1753259005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_22
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1280
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e3aabae192c794c963909815a360ef
+      internalID: 1198893300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_30
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1024
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ed3bda8d0a0fa468ae6d38500fb9cd
+      internalID: 789572178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_37
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 768
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bf18521eb1ed940941a4b74692300d
+      internalID: -1394415940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_44
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 512
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f3cbf536239c64b9629612664ca559
+      internalID: -1306711592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_50
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e739868f19664f4980c0815dbd9b5de
+      internalID: -2034794766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_51
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 256
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1a271da6add9a468584f5e5b7f7fc4
+      internalID: 1318176661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_52
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 256
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed97d708b61ee804f9b1e45aaa11a767
+      internalID: 554055412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_58
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637cd22c3ce39ad4b86ffd713093ea83
+      internalID: -791330007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_59
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 0
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6431b0ed76068984497b4bb676831f43
+      internalID: 37789226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapGround_60
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 0
+        width: 255.375
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cee8e4038892c4c9857fb92e146903
+      internalID: 198736553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TilemapGround_0: 142328594
+      TilemapGround_1: 1197429883
+      TilemapGround_10: -383252395
+      TilemapGround_11: 1621017294
+      TilemapGround_12: 21393206
+      TilemapGround_13: -1381351829
+      TilemapGround_14: -541195929
+      TilemapGround_15: 2018910796
+      TilemapGround_16: 882233359
+      TilemapGround_17: -1740125428
+      TilemapGround_18: -1300243523
+      TilemapGround_19: 77169367
+      TilemapGround_2: -1014847807
+      TilemapGround_20: -649249880
+      TilemapGround_21: -1753259005
+      TilemapGround_22: 1198893300
+      TilemapGround_23: -1148694909
+      TilemapGround_24: 2074976102
+      TilemapGround_25: -109258519
+      TilemapGround_26: -1537618454
+      TilemapGround_27: -1096728602
+      TilemapGround_28: 407235754
+      TilemapGround_29: 1505968990
+      TilemapGround_3: 1710979113
+      TilemapGround_30: 789572178
+      TilemapGround_31: 367262
+      TilemapGround_32: -363408370
+      TilemapGround_33: 1571695434
+      TilemapGround_34: -1624055023
+      TilemapGround_35: -302369950
+      TilemapGround_36: -1783827574
+      TilemapGround_37: -1394415940
+      TilemapGround_38: -150188735
+      TilemapGround_39: 1429061667
+      TilemapGround_4: 321028892
+      TilemapGround_40: -857761442
+      TilemapGround_41: 377723003
+      TilemapGround_42: 577733073
+      TilemapGround_43: 229099037
+      TilemapGround_44: -1306711592
+      TilemapGround_45: 2083801745
+      TilemapGround_46: 1420522535
+      TilemapGround_47: 1356984669
+      TilemapGround_48: 1437632278
+      TilemapGround_49: -1704663423
+      TilemapGround_5: 162097939
+      TilemapGround_50: -2034794766
+      TilemapGround_51: 1318176661
+      TilemapGround_52: 554055412
+      TilemapGround_53: 1050658952
+      TilemapGround_54: -1389787750
+      TilemapGround_55: -534641885
+      TilemapGround_56: -2095801550
+      TilemapGround_57: -546178251
+      TilemapGround_58: -791330007
+      TilemapGround_59: 37789226
+      TilemapGround_6: -1136757622
+      TilemapGround_60: 198736553
+      TilemapGround_7: -115953735
+      TilemapGround_8: 387972400
+      TilemapGround_9: 1029240896
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
