@@ -49,5 +49,8 @@ TagManager:
   - name: Objects
     uniqueID: 3382121441
     locked: 0
+  - name: Guns
+    uniqueID: 2894774245
+    locked: 0
   m_RenderingLayers:
   - Default
