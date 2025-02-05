@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb8a1733c31662d4789bbd8c0a758847, type: 3}
-  m_Name: Gun
+  m_Name: Bow
   m_EditorClassIdentifier: 
-  itenName: Gun
+  itenName: Bow
   statToChange: 1
   amountToChangeStat: 0
   attributesToChange: 1
-  amountToChangeAttribute: 2
+  amountToChangeAttribute: 3

@@ -11,6 +11,11 @@ public class ItemSO : ScriptableObject
 
     public bool UseItem()
     {
+        if (attributesToChange == AttributesToChange.attackDamange)
+        {
+            GameObject.Find("AttackDamangeManager").GetComponent<AttackDamange>().ChangeDamange(amountToChangeAttribute);
+        }
+        
         if (statToChange == StatToChange.health)
         {
             PlayerHealth playerHealth = GameObject.Find("HealthManager").GetComponent<PlayerHealth>();
@@ -24,12 +29,6 @@ public class ItemSO : ScriptableObject
                 return true;
             }
         }
-
-        if (attributesToChange == AttributesToChange.attackDamange)
-        {
-            GameObject.Find("AttackDamangeManager").GetComponent<AttackDamange>().ChangeDamange(amountToChangeAttribute);
-        }
-
         return false;
     }
 

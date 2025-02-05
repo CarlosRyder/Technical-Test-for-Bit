@@ -8,11 +8,16 @@ public class PlayerMovement : MonoBehaviour
     bool facingRight = true;
     Sprite originalDownGunSprite; // To store the original sprite of downGun
     SpriteRenderer spriteRenderer;
+
     [SerializeField] float moveSpeed;
-    [SerializeField] SpriteRenderer gunSpriteRenderer;
-    [SerializeField] Transform gunTransform;
+    [SerializeField] SpriteRenderer gunSpriteRenderer, bowSpriteRenderer;
+    [SerializeField] Transform gunTransform, bowTransform;
     [SerializeField] GameObject upGun, downGun, sideGun;
+    [SerializeField] GameObject upBow, downBow, sideBow;
+
     [SerializeField] RuntimeAnimatorController WalkWithoutGun;
+    [SerializeField] RuntimeAnimatorController WalkWithGun;
+    [SerializeField] RuntimeAnimatorController WalkWithBow;
 
     void Awake()
     {
@@ -51,60 +56,118 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("MoveX", movement.x);
         animator.SetFloat("MoveY", movement.y);
 
-        switch (movement)
+        // Update the facing direction based on horizontal movement
+        if (movement.x != 0)
         {
-            case Vector2 playerMovement when playerMovement.y > 0: // Moving upwards
-                upGun.SetActive(true);
-                downGun.SetActive(false);
-                sideGun.SetActive(false);
-                break;
-
-            case Vector2 playerMovement when playerMovement.y < 0: // Moving downwards
-                downGun.SetActive(true);
-                upGun.SetActive(false);
-                sideGun.SetActive(false);
-                break;
-
-            case Vector2 playerMovement when playerMovement.x != 0 && playerMovement.y == 0: // Moving sideways
-                sideGun.SetActive(true);
-                upGun.SetActive(false);
-                downGun.SetActive(false);
-                facingRight = playerMovement.x > 0; // Determine the facing direction based on x-axis input
-                break;
-
-            default: // No movement
-                upGun.SetActive(false);
-                downGun.SetActive(false);
-                sideGun.SetActive(false);
-                break;
+            facingRight = movement.x > 0;
         }
 
-        // Check if the animator is using the "WalkWithoutGun" controller
-        var downGunSpriteRenderer = downGun.GetComponent<SpriteRenderer>();
-        if (animator.runtimeAnimatorController == WalkWithoutGun)
+        // Determine weapon visibility based on the animator's runtimeAnimatorController
+        switch (animator.runtimeAnimatorController)
         {
-            // Disable the downGun sprite
-            if (downGunSpriteRenderer != null)
-            {
-                downGunSpriteRenderer.sprite = null;
-            }
-        }
-        else
-        {
-            // Restore the original downGun sprite if it was disabled
-            if (downGunSpriteRenderer != null && downGunSpriteRenderer.sprite == null)
-            {
-                downGunSpriteRenderer.sprite = originalDownGunSprite;
-            }
+            case RuntimeAnimatorController controller when controller == WalkWithGun:
+                HandleGunVisibility();
+                DisableBowParts(); // Disable all bow parts when using a gun
+                break;
+
+            case RuntimeAnimatorController controller when controller == WalkWithBow:
+                HandleBowVisibility();
+                DisableGunParts(); // Disable all gun parts when using a bow
+                break;
+
+            default: // WalkWithoutGun
+                DisableGunParts();
+                DisableBowParts();
+                break;
         }
 
         // Update the player's sprite direction (flipX) based on the facing direction
         spriteRenderer.flipX = facingRight;
         gunSpriteRenderer.flipX = facingRight;
+        bowSpriteRenderer.flipX = facingRight;
 
         // Adjust the gun's position based on the player's facing direction
         Vector3 gunPosition = gunTransform.localPosition;
         gunPosition.x = facingRight ? 0.5f : -0.5f; // Move gun to the correct side
-        gunTransform.localPosition = gunPosition;
+        gunTransform.localPosition = gunPosition; 
+        
+        // Adjust the bows's position based on the player's facing direction
+        Vector3 bowPosition = bowTransform.localPosition;
+        bowPosition.x = facingRight ? 0.5f : -0.5f; // Move gun to the correct side
+        bowTransform.localPosition = bowPosition;
+    }
+
+    void HandleGunVisibility()
+    {
+        // Update visibility of gun parts based on movement direction
+        if (movement.y > 0) // Moving upwards
+        {
+            upGun.SetActive(true);
+            downGun.SetActive(false);
+            sideGun.SetActive(false);
+        }
+        else if (movement.y < 0) // Moving downwards
+        {
+            downGun.SetActive(true);
+            upGun.SetActive(false);
+            sideGun.SetActive(false);
+        }
+        else if (movement.x != 0) // Moving sideways
+        {
+            sideGun.SetActive(true);
+            upGun.SetActive(false);
+            downGun.SetActive(false);
+            facingRight = movement.x > 0;
+        }
+        else // No movement
+        {
+            upGun.SetActive(false);
+            downGun.SetActive(false);
+            sideGun.SetActive(false);
+        }
+    }
+
+    void HandleBowVisibility()
+    {
+        // Update visibility of bow parts based on movement direction
+        if (movement.y > 0) // Moving upwards
+        {
+            upBow.SetActive(true);
+            downBow.SetActive(false);
+            sideBow.SetActive(false);
+        }
+        else if (movement.y < 0) // Moving downwards
+        {
+            downBow.SetActive(true);
+            upBow.SetActive(false);
+            sideBow.SetActive(false);
+        }
+        else if (movement.x != 0) // Moving sideways
+        {
+            sideBow.SetActive(true);
+            upBow.SetActive(false);
+            downBow.SetActive(false);
+            facingRight = movement.x > 0;
+        }
+        else // No movement
+        {
+            upBow.SetActive(false);
+            downBow.SetActive(false);
+            sideBow.SetActive(false);
+        }
+    }
+
+    void DisableGunParts()
+    {
+        upGun.SetActive(false);
+        downGun.SetActive(false);
+        sideGun.SetActive(false);
+    }
+
+    void DisableBowParts()
+    {
+        upBow.SetActive(false);
+        downBow.SetActive(false);
+        sideBow.SetActive(false);
     }
 }

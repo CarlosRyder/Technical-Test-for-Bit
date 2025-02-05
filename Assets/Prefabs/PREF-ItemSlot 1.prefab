@@ -180,6 +180,9 @@ MonoBehaviour:
   quantityText: {fileID: 3697595587242889532}
   itemImage: {fileID: 7488580687010494963}
   maxNumberOfItems: 3
+  walkWithGunAnimator: {fileID: 9100000, guid: 5f4cefaa8798902469ec3173db2d3660, type: 2}
+  walkWithBowAnimator: {fileID: 9100000, guid: 4bf3bb2047ce4784b9578edc19b1aad7, type: 2}
+  walkWithOutWeaponsAnimator: {fileID: 9100000, guid: 8e59f6722b9214f4faf44605596706dc, type: 2}
 --- !u!1 &3685966476765415505
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,6 +21,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
     [SerializeField] TMP_Text quantityText;
     [SerializeField] Image itemImage;
     [SerializeField] int maxNumberOfItems;
+    [SerializeField] private RuntimeAnimatorController walkWithGunAnimator, walkWithBowAnimator, walkWithOutWeaponsAnimator;
 
     private void Awake()
     {
@@ -71,11 +72,50 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnLeftClick()
     {
-        if (isThisItemSelected) 
+        if (isThisItemSelected)
         {
             bool usable = inventoryManager.UseItem(itemName);
-            if (usable) 
+            if (usable)
             {
+                GameObject player = GameObject.Find("PlayerWithOutWeapons");
+                if (player != null)
+                {
+                    Animator playerAnimator = player.GetComponent<Animator>();
+                    if (playerAnimator != null)
+                    {
+                        switch (itemName)
+                        {
+                            case "Gun":
+                                playerAnimator.runtimeAnimatorController = walkWithGunAnimator;
+                                Debug.Log("AnimatorController changed to WalkWithGun!");
+                                break;
+
+                            case "Bow":
+                                playerAnimator.runtimeAnimatorController = walkWithBowAnimator;
+                                Debug.Log("AnimatorController changed to WalkWithBow!");
+                                break;
+
+                            case "":
+                            case null:
+                                playerAnimator.runtimeAnimatorController = walkWithOutWeaponsAnimator;
+                                Debug.Log("AnimatorController changed to WalkWithOutWeapons!");
+                                break;
+
+                            default:
+                                Debug.LogWarning("Unknown item name, no animator controller changed.");
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogError("Animator not found on PlayerWithOutWeapons!");
+                    }
+                }
+                else
+                {
+                    Debug.LogError("PlayerWithOutWeapons not found!");
+                }
+
                 this.quantity -= 1;
                 quantityText.text = this.quantity.ToString();
                 if (this.quantity <= 0)
@@ -84,7 +124,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                 }
             }
         }
-        else 
+        else
         {
             inventoryManager.DeselectAllSlots();
             selectedShader.SetActive(true);
@@ -124,10 +164,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
         itemToDrop.AddComponent<BoxCollider2D>();
 
-        itemToDrop.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position + new Vector3 (1f, 0f, 0f);
-        itemToDrop.transform.localScale = new Vector3 (.5f, .5f, .5f);
+        itemToDrop.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position + new Vector3(1.5f, 0f, 0f);
+        itemToDrop.transform.localScale = new Vector3(.5f, .5f, .5f);
 
-        if (itemToDrop.GetComponent<BoxCollider2D>().isTrigger == false) 
+        if (itemToDrop.GetComponent<BoxCollider2D>().isTrigger == false)
         {
             itemToDrop.GetComponent<BoxCollider2D>().isTrigger = true;
         }
