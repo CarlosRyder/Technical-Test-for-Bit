@@ -16,28 +16,28 @@ public class InventoryManager : MonoBehaviour
             if (menuActivated)
             {
                 Time.timeScale = 0; // Pause the game
-                InventoryBackGround.SetActive(true); 
+                InventoryBackGround.SetActive(true);
             }
             else
             {
                 Time.timeScale = 1; // Resume the game
-                InventoryBackGround.SetActive(false); 
+                InventoryBackGround.SetActive(false);
             }
         }
     }
-    
-    public void AddItem(string itemName, int quantity, Sprite itemSprite) 
+
+    public void AddItem(string itemName, int quantity, Sprite itemSprite, string itemDescription)
     {
-        for (int i = 0; i < itemSlot.Length; i++) 
+        for (int i = 0; i < itemSlot.Length; i++)
         {
-            if(itemSlot[i].isFull == false) 
+            if (itemSlot[i].isFull == false)
             {
-                itemSlot[i].AddItem(itemName, quantity, itemSprite);
+                itemSlot[i].AddItem(itemName, quantity, itemSprite, itemDescription);
                 return;
             }
         }
     }
-    public void DeselectAllSlots() 
+    public void DeselectAllSlots()
     {
         for (int i = 0; i < itemSlot.Length; i++)
         {

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WeaponsTrigger : MonoBehaviour
 {
-    [SerializeField] private RuntimeAnimatorController newAnimatorController; 
+    [SerializeField] private RuntimeAnimatorController newAnimatorController;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

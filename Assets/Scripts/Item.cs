@@ -6,6 +6,9 @@ public class Item : MonoBehaviour
     [SerializeField] int quantity;
     [SerializeField] Sprite sprite;
 
+    [TextArea]
+    [SerializeField] string itemDescription;
+
     InventoryManager inventoryManager;
 
     void Awake()
@@ -17,7 +20,7 @@ public class Item : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            inventoryManager.AddItem(itemName, quantity, sprite);
+            inventoryManager.AddItem(itemName, quantity, sprite, itemDescription);
             gameObject.SetActive(false);
         }
     }
