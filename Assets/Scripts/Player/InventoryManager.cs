@@ -5,6 +5,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] GameObject InventoryBackGround;
     bool menuActivated;
     public ItemSlot[] itemSlot;
+    public ItemSO[] itemSOs;
 
     void Update()
     {
@@ -22,6 +23,17 @@ public class InventoryManager : MonoBehaviour
             {
                 Time.timeScale = 1; // Resume the game
                 InventoryBackGround.SetActive(false);
+            }
+        }
+    }
+
+    public void UseItem(string itemName) 
+    {
+        for (int i = 0; i < itemSOs.Length; i++)
+        {
+            if (itemSOs[i].itenName == itemName)
+            {
+                itemSOs[i].UseItem();
             }
         }
     }

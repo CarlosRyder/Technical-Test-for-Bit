@@ -8,7 +8,7 @@ public class WelcomeText : MonoBehaviour
 
     string frase = "These are my weapons, not yours!\n\nBut if you explore you can \n\nfind some of these!";
 
-    private void Awake()
+    void Awake()
     {
         welcomePhrase = GetComponent<TMP_Text>();
     }
