@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    int health;
+    public int health;
     TMP_Text healthText;
+    public int maxHealth = 10;
+
     void Awake()
     {
         healthText = GameObject.Find("HealthText").GetComponent<TMP_Text>();
@@ -18,6 +20,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        healthText.text = "Health: " + health;
+        healthText.text = "Health: " + health + "/" + maxHealth;
     }
 }

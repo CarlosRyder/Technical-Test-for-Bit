@@ -8,28 +8,40 @@ public class ItemSO : ScriptableObject
     public int amountToChangeStat;
     public AttributesToChange attributesToChange = new AttributesToChange();
     public int amountToChangeAttribute;
-    public void UseItem() 
+
+    public bool UseItem()
     {
         if (statToChange == StatToChange.health)
         {
-            GameObject.Find("HealthManager").GetComponent<PlayerHealth>().ChangeHealth(amountToChangeStat);
+            PlayerHealth playerHealth = GameObject.Find("HealthManager").GetComponent<PlayerHealth>();
+            if (playerHealth.health == playerHealth.maxHealth)
+            {
+                return false;
+            }
+            else
+            {
+                playerHealth.ChangeHealth(amountToChangeStat);
+                return true;
+            }
         }
 
         if (attributesToChange == AttributesToChange.attackDamange)
         {
             GameObject.Find("AttackDamangeManager").GetComponent<AttackDamange>().ChangeDamange(amountToChangeAttribute);
         }
+
+        return false;
     }
 
-    public enum StatToChange 
+    public enum StatToChange
     {
-        none, 
+        none,
         health,
-    };  
-    
-    public enum AttributesToChange 
+    };
+
+    public enum AttributesToChange
     {
-        none, 
+        none,
         attackDamange,
     };
 }
