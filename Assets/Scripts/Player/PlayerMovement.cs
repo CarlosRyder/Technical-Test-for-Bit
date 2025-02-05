@@ -89,8 +89,8 @@ public class PlayerMovement : MonoBehaviour
         // Adjust the gun's position based on the player's facing direction
         Vector3 gunPosition = gunTransform.localPosition;
         gunPosition.x = facingRight ? 0.5f : -0.5f; // Move gun to the correct side
-        gunTransform.localPosition = gunPosition; 
-        
+        gunTransform.localPosition = gunPosition;
+
         // Adjust the bows's position based on the player's facing direction
         Vector3 bowPosition = bowTransform.localPosition;
         bowPosition.x = facingRight ? 0.5f : -0.5f; // Move gun to the correct side

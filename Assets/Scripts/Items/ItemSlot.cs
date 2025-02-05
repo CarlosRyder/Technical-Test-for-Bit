@@ -87,18 +87,15 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                         {
                             case "Gun":
                                 playerAnimator.runtimeAnimatorController = walkWithGunAnimator;
-                                Debug.Log("AnimatorController changed to WalkWithGun!");
                                 break;
 
                             case "Bow":
                                 playerAnimator.runtimeAnimatorController = walkWithBowAnimator;
-                                Debug.Log("AnimatorController changed to WalkWithBow!");
                                 break;
 
                             case "":
                             case null:
                                 playerAnimator.runtimeAnimatorController = walkWithOutWeaponsAnimator;
-                                Debug.Log("AnimatorController changed to WalkWithOutWeapons!");
                                 break;
 
                             default:
