@@ -27,7 +27,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public bool UseItem(string itemName) 
+    public bool UseItem(string itemName)
     {
         for (int i = 0; i < itemSOs.Length; i++)
         {
@@ -36,8 +36,8 @@ public class InventoryManager : MonoBehaviour
                 bool usable = itemSOs[i].UseItem();
                 return usable;
             }
-            return false;
         }
+        return false;
     }
 
     public int AddItem(string itemName, int quantity, Sprite itemSprite, string itemDescription)

@@ -2,12 +2,11 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    [SerializeField] string itemName;
-    [SerializeField] int quantity;
-    [SerializeField] Sprite sprite;
-
+    public string itemName;
+    public int quantity;
+    public Sprite sprite;
     [TextArea]
-    [SerializeField] string itemDescription;
+    public string itemDescription;
 
     InventoryManager inventoryManager;
 
