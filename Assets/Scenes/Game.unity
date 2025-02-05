@@ -1327,6 +1327,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4352960580413103660, guid: 67c152710b44a4c4ebe89774d0253d93, type: 3}
+      propertyPath: m_Size.x
+      value: 44.562626
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352960580413103660, guid: 67c152710b44a4c4ebe89774d0253d93, type: 3}
+      propertyPath: m_Size.y
+      value: 9.501267
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352960580413103660, guid: 67c152710b44a4c4ebe89774d0253d93, type: 3}
+      propertyPath: m_Offset.x
+      value: -2.8300686
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352960580413103660, guid: 67c152710b44a4c4ebe89774d0253d93, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.1416211
+      objectReference: {fileID: 0}
     - target: {fileID: 7598910160451874378, guid: 67c152710b44a4c4ebe89774d0253d93, type: 3}
       propertyPath: m_Name
       value: LevelLimit
